@@ -40,9 +40,9 @@ function Signup() {
     }
   }
 
-  onAuthStateChanged(fire, (currentUser) => {
-    if (currentUser) navigate("/netflix");
-  });
+  // onAuthStateChanged(fire, (currentUser) => {
+  //   if (currentUser) navigate("/netflix");
+  // });
   
   return (
     <Container showPassword={showPassword}>
