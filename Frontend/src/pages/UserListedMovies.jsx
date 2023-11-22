@@ -23,7 +23,7 @@ export default function UserListedMovies() {
   const getmovie = async () => {
     try {
 
-      await axios.get("http://localhost:4000/api/liked",{
+      await axios.get("https://netflix-clone-alpha-plum.vercel.app/api/liked",{
           email:state.email,
       }).then((res)=>{
         const mov = res.data.movies;

@@ -30,7 +30,7 @@ export default React.memo(function Card({ index, movieData, isLiked = false ,ema
   
   const addToList = async () => {
     try {
-      await axios.post("http://localhost:4000/api/add", {
+      await axios.post("https://netflix-clone-alpha-plum.vercel.app/api/add", {
         email:email,
         data:{
           name:movieData.name,
@@ -48,7 +48,7 @@ export default React.memo(function Card({ index, movieData, isLiked = false ,ema
 
   const removeFromList = async () => {
     try {
-      await axios.put("http://localhost:4000/api/remove",{
+      await axios.put("https://netflix-clone-alpha-plum.vercel.app/api/remove",{
           email:email,
           name:movieData.name,
 

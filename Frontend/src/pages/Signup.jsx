@@ -26,7 +26,7 @@ function Signup() {
   const handleSignIn = async () => {
     try {
       const {email,password} = formValues;
-      await axios.post("http://localhost:4000/api/register",{
+      await axios.post("https://netflix-clone-alpha-plum.vercel.app/api/register",{
         email:email,
         password:password,
       })
